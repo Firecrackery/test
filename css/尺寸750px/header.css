@@ -1,0 +1,47 @@
+@media screen and (max-width: 750px) {
+  @keyframes input750 {
+    0% {
+      height: 10%;
+    }
+    100% {
+      width: 40vw;
+      height: 100%;
+    }
+  }
+  @keyframes button750 {
+    0% {
+      height: 10%;
+    }
+    100% {
+      height: 100%;
+    }
+  }
+  @keyframes menu {
+    0% {
+      height: 0;
+    }
+    100% {
+      height: 5vh;
+      margin: 0 4vw;
+    }
+  }
+  nav {
+    display: none;
+  }
+  .menu {
+    display: block;
+  }
+  .search {
+    height: 4vh;
+    margin-right: 0;
+  }
+  .search input{
+    animation: input750 .3s ease-in-out forwards;
+  }
+  .search button {
+    animation: button750 .3s ease-in-out forwards;
+  }
+  .menu {
+    animation: menu .1s ease-in-out forwards;
+  }
+}

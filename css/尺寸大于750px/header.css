@@ -1,0 +1,13 @@
+@media screen and (min-width: 751px) {
+  @keyframes search {
+    0% {
+      height: 0;
+    }
+    100% {
+      height: 5vh;
+    }
+  }
+  .search {
+    animation: search .3s ease-in-out forwards;
+  }
+}

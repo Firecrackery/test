@@ -1,0 +1,82 @@
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 10vh;
+  transition: all .2s ease-out;
+}
+header:hover {
+  background: rgba(255, 255, 255, .4);
+}
+/* logo */
+h1 {
+  cursor: pointer;
+  width: 10vw;
+  text-align: center;
+}
+/* 搜索框 */
+.search {
+  margin-right: 5vw;
+  height: 5vh;
+  vertical-align: center;
+}
+.search button,input {
+  float: left;
+  height: 100%;
+}
+.search input {
+  width: 20vw;
+  box-sizing: border-box;
+  border: 1px solid #1296db;
+}
+.search button {
+  width: 5vh;
+  border: 0;
+  background: url(../img/搜索.png) center/100% 100%;
+}
+/* 菜单 */
+.menu {
+  display: none;
+  text-align: center;
+  cursor: pointer;
+  width: 5vh;
+  height: 5vh;
+  background: url(../img/菜单.png) center/100% 100%;
+}
+/* nav */
+nav>ul {
+  display: flex;
+}
+nav>ul>li {
+  position: relative;
+  line-height: 10vh;
+  padding: 0 2vw;
+  cursor: pointer;
+}
+nav>ul>li:hover {
+  border-bottom: 5px solid #1296db;
+}
+nav>ul>li:hover{
+  color: #1296db;
+}
+nav>ul>li:hover>ul{
+  display: block;
+}
+nav>ul>li>ul {
+  display: none;
+  position: absolute;
+  top: 10vh;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+nav>ul>li>ul>li {
+  width: 100%;
+  background: white
+}
+ul>li>ul>li:hover>a {
+  display: block;
+  box-sizing: border-box;
+  color: #1296db;
+}
